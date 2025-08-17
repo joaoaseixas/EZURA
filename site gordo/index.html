@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezura | Tecnologia & Segurança - CFTV, Redes & Infraestrutura</title>
+    <meta name="description" content="CFTV, Redes & Infraestrutura Profissional • Manutenção & Configuração de Computadores em Belo Horizonte - MG">
+    
+    <!-- Animation Frameworks -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Ezura</h1>
+                </div>
+                <nav class="nav" aria-label="Navegação principal">
+                    <ul class="nav-list">
+                        <li><a href="#inicio" class="nav-link">Início</a></li>
+                        <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                        <li><a href="#cases" class="nav-link">Cases</a></li>
+                        <li><a href="#equipe" class="nav-link">Equipe</a></li>
+                        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                        <li><a href="#contato" class="nav-link">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="theme-toggle" aria-label="Alternar tema" id="themeToggle" onclick="toggleTheme()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                    </button>
+                    <a href="https://www.instagram.com/grupo_ezura" target="_blank" rel="noopener" class="btn btn-primary">Instagram</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Abrir menu" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="inicio">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title animate__animated animate__fadeInDown">Tecnologia e Segurança sem dor de cabeça</h2>
+                    <p class="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s">CFTV, Redes & Infraestrutura Profissional • Manutenção & Configuração de Computadores</p>
+                    <div class="hero-actions animate__animated animate__fadeInUp animate__delay-2s">
+                        <a href="https://www.instagram.com/grupo_ezura" target="_blank" rel="noopener" class="btn btn-primary btn-large animate__animated animate__pulse animate__infinite">Acessar Instagram</a>
+                        <a href="#servicos" class="btn btn-secondary btn-large animate__animated animate__bounceIn animate__delay-3s">Conhecer Serviços</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviços -->
+        <section class="services" id="servicos">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-aos="fade-up">Nossos Serviços</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">Soluções completas em tecnologia e segurança</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card floating" data-reveal>
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">CFTV & Monitoramento</h3>
+                        <p class="service-description">Sistemas de segurança eletrônica com câmeras de alta definição e monitoramento 24h.</p>
+                        <ul class="service-features">
+                            <li>Câmeras IP e analógicas</li>
+                            <li>Gravação em nuvem</li>
+                            <li>Acesso remoto via app</li>
+                            <li>Análise inteligente de vídeo</li>
+                        </ul>
+                        <button class="btn btn-outline" onclick="openModal('cftv-modal')">Saiba mais</button>
+                    </div>
+
+                    <div class="service-card floating" data-reveal>
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M12 1v6m0 6v6"></path>
+                                <path d="m21 12-6-3-6 3-6-3"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Redes & Infraestrutura</h3>
+                        <p class="service-description">Projetos e implementação de redes corporativas com alta performance e segurança.</p>
+                        <ul class="service-features">
+                            <li>Cabeamento estruturado</li>
+                            <li>Redes Wi-Fi empresariais</li>
+                            <li>Servidores e storage</li>
+                            <li>Firewall e segurança</li>
+                        </ul>
+                        <button class="btn btn-outline" onclick="openModal('redes-modal')">Saiba mais</button>
+                    </div>
+
+                    <div class="service-card floating" data-reveal>
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="4" y="4" width="16" height="12" rx="2"></rect>
+                                <path d="M8 12h.01"></path>
+                                <path d="M16 12h.01"></path>
+                                <path d="M12 12h.01"></path>
+                                <path d="M12 20v.01"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Manutenção de Computadores</h3>
+                        <p class="service-description">Suporte técnico especializado para manter seus equipamentos sempre funcionando.</p>
+                        <ul class="service-features">
+                            <li>Manutenção preventiva</li>
+                            <li>Formatação e instalação</li>
+                            <li>Upgrade de hardware</li>
+                            <li>Suporte remoto</li>
+                        </ul>
+                        <button class="btn btn-outline" onclick="openModal('manutencao-modal')">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cases -->
+        <section class="cases" id="cases">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-aos="fade-up">Cases de Sucesso</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">Projetos que transformaram a segurança e tecnologia de nossos clientes</p>
+                </div>
+                <div class="cases-grid">
+                    <div class="case-card" data-reveal>
+                        <img src="assets/case1.jpg" alt="Sistema CFTV Empresarial" loading="lazy" class="case-image">
+                        <div class="case-content">
+                            <h3 class="case-title">Sistema CFTV Empresarial</h3>
+                            <p class="case-description">Implementação completa de monitoramento para empresa de médio porte</p>
+                            <button class="btn btn-outline" onclick="openModal('case1-modal')">Ver mais</button>
+                        </div>
+                    </div>
+
+                    <div class="case-card" data-reveal>
+                        <img src="assets/case2.jpg" alt="Rede Corporativa" loading="lazy" class="case-image">
+                        <div class="case-content">
+                            <h3 class="case-title">Rede Corporativa</h3>
+                            <p class="case-description">Modernização da infraestrutura de TI com aumento de 300% na velocidade</p>
+                            <button class="btn btn-outline" onclick="openModal('case2-modal')">Ver mais</button>
+                        </div>
+                    </div>
+
+                    <div class="case-card" data-reveal>
+                        <img src="assets/case3.jpg" alt="Suporte Técnico" loading="lazy" class="case-image">
+                        <div class="case-content">
+                            <h3 class="case-title">Suporte Técnico</h3>
+                            <p class="case-description">Manutenção preventiva que reduziu downtime em 90%</p>
+                            <button class="btn btn-outline" onclick="openModal('case3-modal')">Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipe -->
+        <section class="team" id="equipe">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-aos="fade-up">Nossa Equipe</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">Profissionais especializados em tecnologia e segurança</p>
+                </div>
+                <div class="team-preview">
+                    <div class="team-grid" id="teamPreview">
+                        <!-- Será preenchido pelo JavaScript -->
+                    </div>
+                    <button class="btn btn-primary pulse" onclick="openTeamOverlay()">Ver todos os membros</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre -->
+        <section class="about" id="sobre">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Sobre a Ezura</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text" data-reveal>
+                        <h3>Nossa Missão</h3>
+                        <p>Fornecer soluções tecnológicas inovadoras e seguras que protegem e otimizam os negócios de nossos clientes.</p>
+                        
+                        <h3>Nossa Visão</h3>
+                        <p>Ser referência em tecnologia e segurança em Minas Gerais, reconhecida pela excelência e inovação.</p>
+                        
+                        <h3>Nossos Valores</h3>
+                        <p>Transparência, qualidade, inovação e compromisso com resultados que fazem a diferença.</p>
+                    </div>
+                    <div class="about-features" data-reveal>
+                        <h3>Nossos Diferenciais</h3>
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 12l2 2 4-4"></path>
+                                    <circle cx="12" cy="12" r="9"></circle>
+                                </svg>
+                                <span>Atendimento Consultivo</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14,2 14,8 20,8"></polyline>
+                                </svg>
+                                <span>Documentação Completa</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                                </svg>
+                                <span>Suporte Pós-Venda</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section class="contact" id="contato">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <p class="section-subtitle">Estamos prontos para atender suas necessidades</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info" data-reveal>
+                        <div class="contact-card">
+                            <h3>Localização</h3>
+                            <p>COTEMIG - Colégio e Faculdade<br>
+                            Rua Santa Cruz, 546 - Barroca<br>
+                            Belo Horizonte - MG, 30431-228</p>
+                            <a href="https://maps.google.com/?q=COTEMIG+Rua+Santa+Cruz+546+Barroca+Belo+Horizonte" target="_blank" rel="noopener" class="btn btn-outline">Ver no Google Maps</a>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <h3>E-mail</h3>
+                            <p>contato@ezura.com.br</p>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <h3>Redes Sociais</h3>
+                            <a href="https://www.instagram.com/grupo_ezura" target="_blank" rel="noopener" class="btn btn-primary">Seguir no Instagram</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-map" data-reveal>
+                        <img src="assets/mapa.jpg" alt="Localização da Ezura no mapa" loading="lazy" class="map-image">
+                    </div>
+                </div>
+                
+                <div class="privacy-notice">
+                    <p><small>Respeitamos sua privacidade. Seus dados são utilizados apenas para contato comercial e não são compartilhados com terceiros.</small></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Ezura</h3>
+                    <p>Tecnologia & Segurança</p>
+                </div>
+                <nav class="footer-nav">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#cases">Cases</a></li>
+                        <li><a href="#equipe">Equipe</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p>contato@ezura.com.br</p>
+                    <a href="https://www.instagram.com/grupo_ezura" target="_blank" rel="noopener" class="btn btn-primary btn-small">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ezura | Tecnologia & Segurança. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modal">
+            <button class="modal-close" onclick="closeModal()" aria-label="Fechar modal">&times;</button>
+            <div class="modal-content" id="modalContent">
+                <!-- Conteúdo será inserido dinamicamente -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Overlay -->
+    <div class="team-overlay" id="teamOverlay">
+        <div class="team-overlay-content">
+            <div class="team-overlay-header">
+                <h2>Nossa Equipe Completa</h2>
+                <button class="modal-close" onclick="closeTeamOverlay()" aria-label="Fechar">&times;</button>
+            </div>
+            <div class="team-filters">
+                <input type="text" id="teamSearch" placeholder="Buscar por nome..." class="search-input">
+                <select id="teamFilter" class="filter-select">
+                    <option value="">Todos os cargos</option>
+                </select>
+            </div>
+            <div class="team-full-grid" id="teamFullGrid">
+                <!-- Será preenchido pelo JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Three.js Background Canvas -->
+    <canvas id="threejs-canvas"></canvas>
+    
+    <!-- Animation Framework Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
